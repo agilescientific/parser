@@ -1,0 +1,194 @@
+name,start,start_unit,start_uncertainty,end,end_unit,end_uncertainty,part_of,rank,source
+Phanerozoic,541.0,Ma,1.0,0.0,Ma,,None,Eon,ics2020
+Cenozoic,66.0,Ma,,0.0,Ma,,Phanerozoic,Era,ics2020
+Quaternary,2.58,Ma,,0.0,Ma,,Cenozoic,Period,ics2020
+Holocene,0.0117,Ma,,0.0,Ma,,Quaternary,Epoch,ics2020
+Meghalayan,0.0042,Ma,,0.0,Ma,,Holocene,Age,ics2020
+Northgrippian,0.0082,Ma,,0.0042,Ma,,Holocene,Age,ics2020
+Greenlandian,0.0117,Ma,,0.0082,Ma,,Holocene,Age,ics2020
+Pleistocene,2.58,Ma,,0.0117,Ma,,Quaternary,Epoch,ics2020
+Late Pleistocene,0.129,Ma,,0.0117,Ma,,Pleistocene,Age,ics2020
+Upper Pleistocene,0.129,Ma,,0.0117,Ma,,Pleistocene,Age,ics2020
+Chibanian,0.774,Ma,,0.129,Ma,,Pleistocene,Age,ics2020
+Calabrian,1.80,Ma,,0.774,Ma,,Pleistocene,Age,ics2020
+Gelasian,2.58,Ma,,1.80,Ma,,Pleistocene,Age,ics2020
+Neogene,23.03,Ma,,2.58,Ma,,Cenozoic,Period,ics2020
+Pliocene,5.333,Ma,,2.58,Ma,,Neogene,Epoch,ics2020
+Piacenzian,3.6,Ma,,2.58,Ma,,Pliocene,Age,ics2020
+Zanclean,5.333,Ma,,3.6,Ma,,Pliocene,Age,ics2020
+Miocene,23.03,Ma,,5.333,Ma,,Neogene,Epoch,ics2020
+Messinian,7.246,Ma,,5.333,Ma,,Miocene,Age,ics2020
+Tortonian,11.63,Ma,,7.246,Ma,,Miocene,Age,ics2020
+Serravallian,13.82,Ma,,11.63,Ma,,Miocene,Age,ics2020
+Langhian,15.97,Ma,,13.82,Ma,,Miocene,Age,ics2020
+Burdigalian,20.44,Ma,,15.97,Ma,,Miocene,Age,ics2020
+Aquitanian,23.03,Ma,,20.44,Ma,,Miocene,Age,ics2020
+Paleogene,66.0,Ma,,23.03,Ma,,Cenozoic,Period,ics2020
+Oligocene,33.9,Ma,,23.03,Ma,,Paleogene,Epoch,ics2020
+Chattian,27.82,Ma,,23.03,Ma,,Oligocene,Age,ics2020
+Rupelian,33.9,Ma,,27.82,Ma,,Oligocene,Age,ics2020
+Eocene,56,Ma,,33.9,Ma,,Paleogene,Epoch,ics2020
+Priabonian,37.8,Ma,,33.9,Ma,,Eocene,Age,ics2020
+Bartonian,41.2,Ma,,37.8,Ma,,Eocene,Age,ics2020
+Lutetian,47.8,Ma,,41.2,Ma,,Eocene,Age,ics2020
+Ypresian,56,Ma,,47.8,Ma,,Eocene,Age,ics2020
+Palaeocene,66.0,Ma,,56,Ma,,Paleogene,Epoch,ics2020
+Thanetian,59.2,Ma,,56,Ma,,Palaeocene,Age,ics2020
+Selandian,61.6,Ma,,59.2,Ma,,Palaeocene,Age,ics2020
+Danian,66.0,Ma,,61.6,Ma,,Palaeocene,Age,ics2020
+Mesozoic,251.902,Ma,0.024,66.0,Ma,,Phanerozoic,Era,ics2020
+Cretaceous,145.0,Ma,,66.0,Ma,,Mesozoic,Period,ics2020
+Late Cretaceous,100.5,Ma,,66.0,Ma,,Cretaceous,Epoch,ics2020
+Upper Cretaceous,100.5,Ma,,66.0,Ma,,Cretaceous,Epoch,ics2020
+Maastrichtian,72.1,Ma,0.2,66.0,Ma,,Late Cretaceous,Age,ics2020
+Campanian,83.6,Ma,0.2,72.1,Ma,0.2,Late Cretaceous,Age,ics2020
+Santonian,86.3,Ma,0.5,83.6,Ma,0.2,Late Cretaceous,Age,ics2020
+Coniacian,89.8,Ma,0.3,86.3,Ma,0.5,Late Cretaceous,Age,ics2020
+Turonian,93.9,Ma,,89.8,Ma,0.3,Late Cretaceous,Age,ics2020
+Cenomanian,100.5,Ma,,93.9,Ma,,Late Cretaceous,Age,ics2020
+Lower Cretaceous,145.0,Ma,,100.5,Ma,,Cretaceous,Epoch,ics2020
+Early Cretaceous,145.0,Ma,,100.5,Ma,,Cretaceous,Epoch,ics2020
+Albian,113.0,Ma,,100.5,Ma,,Early Cretaceous,Age,ics2020
+Aptian,125.0,Ma,,113.0,Ma,,Early Cretaceous,Age,ics2020
+Barremian,129.4,Ma,,125.0,Ma,,Early Cretaceous,Age,ics2020
+Hauterivian,132.6,Ma,,129.4,Ma,,Early Cretaceous,Age,ics2020
+Valanginian,139.8,Ma,,132.6,Ma,,Early Cretaceous,Age,ics2020
+Berriasian,145.0,Ma,,139.8,Ma,,Early Cretaceous,Age,ics2020
+Jurassic,201.3,Ma,0.2,145.0,Ma,,Mesozoic,Period,ics2020
+Upper Jurassic,163.5,Ma,1.0,145.0,Ma,,Jurassic,Epoch,ics2020
+Late Jurassic,163.5,Ma,1.0,145.0,Ma,,Jurassic,Epoch,ics2020
+Tithonian,152.1,Ma,0.9,145.0,Ma,,Late Jurassic,Age,ics2020
+Kimmeridgian,157.3,Ma,1.0,152.1,Ma,0.9,Late Jurassic,Age,ics2020
+Oxfordian,163.5,Ma,1.0,157.3,Ma,1.0,Late Jurassic,Age,ics2020
+Middle Jurassic,174.1,Ma,1.0,163.5,Ma,1.0,Jurassic,Epoch,ics2020
+Callovian,166.1,Ma,1.2,163.5,Ma,1.0,Middle Jurassic,Age,ics2020
+Bathonian,168.3,Ma,1.3,166.1,Ma,1.2,Middle Jurassic,Age,ics2020
+Bajocian,170.3,Ma,1.4,168.3,Ma,1.3,Middle Jurassic,Age,ics2020
+Aalenian,174.1,Ma,1.0,170.3,Ma,1.4,Middle Jurassic,Age,ics2020
+Lower Jurassic,201.3,Ma,0.2,174.1,Ma,1.0,Jurassic,Epoch,ics2020
+Early Jurassic,201.3,Ma,0.2,174.1,Ma,1.0,Jurassic,Epoch,ics2020
+Toarcian,182.7,Ma,0.7,174.1,Ma,1.0,Early Jurassic,Age,ics2020
+Pliensbachian,190.8,Ma,1.0,182.7,Ma,0.7,Early Jurassic,Age,ics2020
+Sinemurian,199.3,Ma,0.3,190.8,Ma,1.0,Early Jurassic,Age,ics2020
+Hettangian,201.3,Ma,0.2,199.3,Ma,0.3,Early Jurassic,Age,ics2020
+Triassic,251.902,Ma,0.024,201.3,Ma,0.2,Mesozoic,Period,ics2020
+Upper Triassic,237,Ma,,201.3,Ma,0.2,Triassic,Epoch,ics2020
+Late Triassic,237,Ma,,201.3,Ma,0.2,Triassic,Epoch,ics2020
+Rhaetian,208.5,Ma,,201.3,Ma,0.2,Late Triassic,Age,ics2020
+Norian,227,Ma,,208.5,Ma,,Late Triassic,Age,ics2020
+Carnian,237,Ma,,227,Ma,,Late Triassic,Age,ics2020
+Middle Triassic,247.2,Ma,,237,Ma,,Triassic,Epoch,ics2020
+Ladinian,242,Ma,,237,Ma,,Middle Triassic,Age,ics2020
+Anisian,247.2,Ma,,242,Ma,,Middle Triassic,Age,ics2020
+Lower Triassic,251.902,Ma,0.024,247.2,Ma,,Triassic,Epoch,ics2020
+Early Triassic,251.902,Ma,0.024,247.2,Ma,,Triassic,Epoch,ics2020
+Olenekian,251.2,Ma,,247.2,Ma,,Early Triassic,Age,ics2020
+Induan,251.902,Ma,0.024,251.2,Ma,,Early Triassic,Age,ics2020
+Paleozoic,541.0,Ma,1.0,251.902,Ma,0.024,Phanerozoic,Era,ics2020
+Permian,298.9,Ma,0.15,251.902,Ma,0.024,Palaeozoic,Period,ics2020
+Lopingian,259.1,Ma,0.5,251.902,Ma,0.024,Permian,Epoch,ics2020
+Changhsingian,254.14,Ma,0.07,251.902,Ma,0.024,Lopingian,Age,ics2020
+Wuchiapingian,259.1,Ma,0.5,254.14,Ma,0.07,Lopingian,Age,ics2020
+Guadalupian,272.95,Ma,0.11,259.1,Ma,0.5,Permian,Epoch,ics2020
+Capitanian,265.1,Ma,0.4,259.1,Ma,0.5,Guadalupian,Age,ics2020
+Wordian,268.8,Ma,0.5,265.1,Ma,0.4,Guadalupian,Age,ics2020
+Roadian,272.95,Ma,0.11,268.8,Ma,0.5,Guadalupian,Age,ics2020
+Cisuralian,298.9,Ma,0.15,272.95,Ma,0.11,Permian,Epoch,ics2020
+Kungurian,283.5,Ma,0.6,272.95,Ma,0.11,Cisuralian,Age,ics2020
+Artinskian,290.1,Ma,0.26,283.5,Ma,0.6,Cisuralian,Age,ics2020
+Sakmarian,293.52,Ma,0.17,290.1,Ma,0.26,Cisuralian,Age,ics2020
+Asselian,298.9,Ma,0.15,293.52,Ma,0.17,Cisuralian,Age,ics2020
+Carboniferous,358.9,Ma,0.4,298.9,Ma,0.15,Palaeozoic,Period,ics2020
+Pennsylvanian,323.2,Ma,0.4,298.9,Ma,0.15,Carboniferous,Sub-Period,ics2020
+Upper Pennsylvanian,307,Ma,0.1,298.9,Ma,0.15,Pennsylvanian,Epoch,ics2020
+Late Pennsylvanian,307,Ma,0.1,298.9,Ma,0.15,Pennsylvanian,Epoch,ics2020
+Gzhelian,303.7,Ma,0.1,298.9,Ma,0.15,Late Pennsylvanian,Age,ics2020
+Kasimovian,307,Ma,0.1,303.7,Ma,0.1,Late Pennsylvanian,Age,ics2020
+Middle Pennsylvanian,315.2,Ma,0.2,307,Ma,0.1,Pennsylvanian,Epoch,ics2020
+Moscovian,315.2,Ma,0.2,307,Ma,0.1,Middle Pennsylvanian,Age,ics2020
+Lower Pennsylvanian,323.2,Ma,0.4,315.2,Ma,0.2,Pennsylvanian,Epoch,ics2020
+Early Pennsylvanian,323.2,Ma,0.4,315.2,Ma,0.2,Pennsylvanian,Epoch,ics2020
+Bashkirian,323.2,Ma,0.4,315.2,Ma,0.2,Early Pennsylvanian,Age,ics2020
+Mississippian,358.9,Ma,0.4,323.2,Ma,0.4,Carboniferous,Sub-Period,ics2020
+Upper Mississippian,330.9,Ma,0.2,323.2,Ma,0.4,Mississippian,Epoch,ics2020
+Late Mississippian,330.9,Ma,0.2,323.2,Ma,0.4,Mississippian,Epoch,ics2020
+Serpukhovian,330.9,Ma,0.2,323.2,Ma,0.4,Late Mississippian,Age,ics2020
+Middle Mississippian,346.7,Ma,0.4,330.9,Ma,0.2,Mississippian,Epoch,ics2020
+Visean,346.7,Ma,0.4,330.9,Ma,0.2,Middle Mississippian,Age,ics2020
+Lower Mississippian,358.9,Ma,0.4,346.7,Ma,0.4,Mississippian,Epoch,ics2020
+Early Mississippian,358.9,Ma,0.4,346.7,Ma,0.4,Mississippian,Epoch,ics2020
+Tournaisian,358.9,Ma,0.4,346.7,Ma,0.4,Early Mississippian,Age,ics2020
+Devonian,419.2,Ma,3.2,358.9,Ma,0.4,Palaeozoic,Period,ics2020
+Late Devonian,382.7,Ma,1.6,358.9,Ma,0.4,Devonian,Epoch,ics2020
+Upper Devonian,382.7,Ma,1.6,358.9,Ma,0.4,Devonian,Epoch,ics2020
+Famennian,372.2,Ma,1.6,358.9,Ma,0.4,Late Devonian,Age,ics2020
+Frasnian,382.7,Ma,1.6,372.2,Ma,1.6,Late Devonian,Age,ics2020
+Middle Devonian,393.3,Ma,1.2,382.7,Ma,1.6,Devonian,Epoch,ics2020
+Givetian,387.7,Ma,0.8,382.7,Ma,1.6,Middle Devonian,Age,ics2020
+Eifelian,393.3,Ma,1.2,387.7,Ma,0.8,Middle Devonian,Age,ics2020
+Lower Devonian,419.2,Ma,3.2,393.3,Ma,1.2,Devonian,Epoch,ics2020
+Early Devonian,419.2,Ma,3.2,393.3,Ma,1.2,Devonian,Epoch,ics2020
+Emsian,407.6,Ma,2.6,393.3,Ma,1.2,Early Devonian,Age,ics2020
+Pragian,410.8,Ma,2.8,407.6,Ma,2.6,Early Devonian,Age,ics2020
+Lochkovian,419.2,Ma,3.2,410.8,Ma,2.8,Early Devonian,Age,ics2020
+Silurian,443.8,Ma,1.5,419.2,Ma,3.2,Palaeozoic,Period,ics2020
+Pridoli,423,Ma,2.3,419.2,Ma,3.2,Silurian,"Age, Epoch",ics2020
+Ludlow,427.4,Ma,0.5,423,Ma,2.3,Silurian,Epoch,ics2020
+Ludfordian,425.6,Ma,0.9,423,Ma,2.3,Ludlow,Age,ics2020
+Gorstian,427.4,Ma,0.5,425.6,Ma,0.9,Ludlow,Age,ics2020
+Wenlock,433.4,Ma,0.8,427.4,Ma,0.5,Silurian,Epoch,ics2020
+Homerian,430.5,Ma,0.7,427.4,Ma,0.5,Wenlock,Age,ics2020
+Sheinwoodian,433.4,Ma,0.8,430.5,Ma,0.7,Wenlock,Age,ics2020
+Llandovery,443.8,Ma,1.5,433.4,Ma,0.8,Silurian,Epoch,ics2020
+Telychian,438.5,Ma,1.1,433.4,Ma,0.8,Llandovery,Age,ics2020
+Aeronian,440.8,Ma,1.2,438.5,Ma,1.1,Llandovery,Age,ics2020
+Rhuddanian,443.8,Ma,1.5,440.8,Ma,1.2,Llandovery,Age,ics2020
+Ordovician,485.4,Ma,1.9,443.8,Ma,1.5,Palaeozoic,Period,ics2020
+Late Ordovician,458.4,Ma,0.9,443.8,Ma,1.5,Ordovician,Epoch,ics2020
+Upper Ordovician,458.4,Ma,0.9,443.8,Ma,1.5,Ordovician,Epoch,ics2020
+Hirnantian,445.2,Ma,1.4,443.8,Ma,1.5,Late Ordovician,Age,ics2020
+Katian,453,Ma,0.7,445.2,Ma,1.4,Late Ordovician,Age,ics2020
+Sandbian,458.4,Ma,0.9,453,Ma,0.7,Late Ordovician,Age,ics2020
+Middle Ordovician,470.0,Ma,1.4,458.4,Ma,0.9,Ordovician,Epoch,ics2020
+Darriwilian,467.3,Ma,1.1,458.4,Ma,0.9,Middle Ordovician,Age,ics2020
+Dapingian,470.0,Ma,1.4,467.3,Ma,1.1,Middle Ordovician,Age,ics2020
+Early Ordovician,485.4,Ma,1.9,470.0,Ma,1.4,Ordovician,Epoch,ics2020
+Lower Ordovician,485.4,Ma,1.9,470.0,Ma,1.4,Ordovician,Epoch,ics2020
+Floian,477.7,Ma,1.4,470.0,Ma,1.4,Early Ordovician,Age,ics2020
+Tremadocian,485.4,Ma,1.9,477.7,Ma,1.4,Early Ordovician,Age,ics2020
+Cambrian,541.0,Ma,1.0,485.4,Ma,1.9,Palaeozoic,Period,ics2020
+Furongian,497,Ma,,485.4,Ma,1.9,Cambrian,Epoch,ics2020
+Cambrian-Stage 10,489.5,Ma,,485.4,Ma,1.9,Furongian,Age,ics2020
+Jiangshanian,494,Ma,,489.5,Ma,,Furongian,Age,ics2020
+Paibian,497,Ma,,494,Ma,,Furongian,Age,ics2020
+Miaolingian,509,Ma,,497,Ma,,Cambrian,Epoch,ics2020
+Guzhangian,500.5,Ma,,497,Ma,,Miaolingian,Age,ics2020
+Drumian,504.5,Ma,,500.5,Ma,,Miaolingian,Age,ics2020
+Wuliuan,509,Ma,,504.5,Ma,,Miaolingian,Age,ics2020
+Cambrian Series 2,521,Ma,,509,Ma,,Cambrian,Epoch,ics2020
+Cambrian-Stage 4,514,Ma,,509,Ma,,Cambrian Series 2,Age,ics2020
+Cambrian-Stage 3,521,Ma,,514,Ma,,Cambrian Series 2,Age,ics2020
+Terreneuvian,541.0,Ma,1.0,521,Ma,,Cambrian,Epoch,ics2020
+Cambrian-Stage 2,529,Ma,,521,Ma,,Terreneuvian,Age,ics2020
+Fortunian,541.0,Ma,1.0,529,Ma,,Terreneuvian,Age,ics2020
+Precambrian,4567,Ma,1,541.0,Ma,1.0,None,Super-Eon,ics2020
+Proterozoic,2500,Ma,,541.0,Ma,1.0,Precambrian,Eon,ics2020
+Neoproterozoic,1000,Ma,,541.0,Ma,1.0,Proterozoic,Era,ics2020
+Ediacaran,635,Ma,,541.0,Ma,1.0,Neoproterozoic,Period,ics2020
+Cryogenian,720,Ma,,635,Ma,,Neoproterozoic,Period,ics2020
+Tonian,1000,Ma,,720,Ma,,Neoproterozoic,Period,ics2020
+Mesoproterozoic,1600,Ma,,1000,Ma,,Proterozoic,Era,ics2020
+Stenian,1200,Ma,,1000,Ma,,Mesoproterozoic,Period,ics2020
+Ectasian,1400,Ma,,1200,Ma,,Mesoproterozoic,Period,ics2020
+Calymmian,1600,Ma,,1400,Ma,,Mesoproterozoic,Period,ics2020
+Paleoproterozoic,2500,Ma,,1600,Ma,,Proterozoic,Era,ics2020
+Statherian,1800,Ma,,1600,Ma,,Paleoproterozoic,Period,ics2020
+Orosirian,2050,Ma,,1800,Ma,,Paleoproterozoic,Period,ics2020
+Rhyacian,2300,Ma,,2050,Ma,,Paleoproterozoic,Period,ics2020
+Siderian,2500,Ma,,2300,Ma,,Paleoproterozoic,Period,ics2020
+Archaean,4000,Ma,,2500,Ma,,Precambrian,Eon,ics2020
+Neoarchaean,2800,Ma,,2500,Ma,,Archean,Era,ics2020
+Mesoarchaean,3200,Ma,,2800,Ma,,Archean,Era,ics2020
+Palaeoarchaean,3600,Ma,,3200,Ma,,Archean,Era,ics2020
+Eoarchaean,4000,Ma,,3600,Ma,,Archean,Era,ics2020
+Hadean,4567,Ma,1,4000,Ma,,Precambrian,Eon,ics2020
