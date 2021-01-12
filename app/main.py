@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 from spacy.lang.en import English
-import en_core_web_sm
+#import en_core_web_sm
 
 import gner # class for recognising chronological entities.
 

@@ -8,8 +8,47 @@ from spacy.tokens.span import Span
 from spacy.tokens.token import Token
 from spacy.util import filter_spans
 
-from pandas import read_csv as pd_read_csv
-import numpy as np
+
+def process_csv(fname):
+    '''
+    Helper function to obtain a list of dictionaries from a csv file.
+    Each record/row is converted to a dictionary.
+    The values for start, end, and their uncertainties are converted
+      to floats if they exist, but are otherwise left alone.
+
+    Args:
+    fname [str] -> location of the data file
+
+    Returns:
+    [list] -> list of dicts
+    '''
+    with open(fname, 'r') as f:
+        header_line = f.readline().strip().split(',')
+        raw_data = f.readlines()
+        data = []
+        for line in raw_data:
+            row = {key: value for key, value in zip(header_line, line.strip().split(','))}
+
+            try:
+                row['start'] = float(row['start'])
+            except:
+                pass
+            try:
+                row['end'] = float(row['end'])
+            except:
+                pass
+            try:
+                row['start_uncertainty'] = float(row['start_uncertainty'])
+            except:
+                pass
+            try:
+                row['end_uncertainty'] = float(row['end_uncertainty'])
+            except:
+                pass
+            data.append(row)
+
+    return data
+
 
 
 class ChronologyComponent(object):
@@ -26,7 +65,8 @@ class ChronologyComponent(object):
         """
         # Make request once on initialisation and store the data
         # We are reading a CSV derived from the ICS2020.ttl file.
-        chronologies = pd_read_csv('data/chrono_csv_ics2020.csv').to_dict(orient='records')
+        #chronologies = pd_read_csv('data/chrono_csv_ics2020.csv').to_dict(orient='records')
+        chronologies = process_csv('data/chrono_csv_ics2020.csv')
 
         # We will use a dict to store the patterns of interest and attributes.
         self.chronologies = {c['name']: c for c in chronologies}
@@ -77,11 +117,13 @@ class ChronologyComponent(object):
                 token._.set('rank', self.chronologies[entity.text]['rank'])
                 token._.set('part_of', self.chronologies[entity.text]['part_of'])
                 token._.set('source', self.chronologies[entity.text]['source'])
-                if np.isnan(self.chronologies[entity.text]['start_uncertainty']):
+                #if np.isnan(self.chronologies[entity.text]['start_uncertainty']):
+                if self.chronologies[entity.text]['start_uncertainty'] == '':
                     token._.set('start_uncert', None)
                 else:
                     token._.set('start_uncert', self.chronologies[entity.text]['start_uncertainty'])
-                if np.isnan(self.chronologies[entity.text]['end_uncertainty']):
+                #if np.isnan(self.chronologies[entity.text]['end_uncertainty']):
+                if self.chronologies[entity.text]['end_uncertainty'] == '':
                     token._.set('end_uncert', None)
                 else:
                     token._.set('end_uncert', self.chronologies[entity.text]['end_uncertainty'])
