@@ -1,6 +1,9 @@
 from typing import Optional
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.responses import HTMLResponse
+from fastapi.templating import Jinja2Templates
+
 from pydantic import BaseModel
 
 from spacy.lang.en import English
@@ -9,6 +12,7 @@ from spacy.lang.en import English
 import gner # class for recognising chronological entities.
 
 app = FastAPI()
+templates = Jinja2Templates(directory="app/templates")
 
 
 class Data(BaseModel):
@@ -29,7 +33,7 @@ def find_chronos(text: str):
     for token in doc:
         if token._.is_chrono:
             tokens.append({
-                'text': token.text,
+                'interval': token.text,
                 'start_date': token._.start,
                 'start_uncert': token._.start_uncert,
                 'end_date': token._.end,
@@ -42,3 +46,9 @@ def find_chronos(text: str):
     # print(tokens)
     return {"pipe": pipe, "details": tokens}
 
+
+@app.get("/", response_class=HTMLResponse)
+def read_item(request: Request):
+    with open('templates/index.html') as f:
+        print(f.readlines())
+    return templates.TemplateResponse("index.html", {"request": request})
