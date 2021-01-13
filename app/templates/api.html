@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="container">
+<h1>Welcome to parser.geosci.ai's API</h1>
+<p><strong>geotherm.ai</strong> accepts words and recommends related papers.</p>
+<a href="http://parser.geosci.ai/api?text=Devonian"><pre>http://parser.geosci.ai/api?text=Devonian</pre></a><p></p>
+
+<h2>Parameters</h2>
+<ul>
+<li><code>text</code> — the text to find geochronological intervals in.</li>
+</ul>
+
+<h2>Example</h2>
+<p>This GET request is the same as the one shown in the link above.</p>
+<pre>import requests
+
+url = "http://parser.geosci.ai/api"
+params = {'text': 'Devonian'}
+headers = {"Accept": "application/json"}
+
+response = requests.get(url, headers=headers, params=params)
+response.json()</pre>
+
+<hr>
+<h2>TODO</h2>
+<ul>
+<li>A lot of things!</li>
+</ul>
+</div>
+
+{% endblock %}

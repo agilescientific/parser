@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container">
+
+  <div class="hero-unit">
+
+    <p style="margin-bottom:24px;">Give <strong>parser.geosci.ai</strong> a paragraph containing geochronological intervals.<br/> 
+       You will be given some details on those intervals that are present.</p>
+
+      <form class="form" action="/chrono">
+        <textarea class="input-block-level" rows="3" name="text" id="text" placeholder="The Devonian shale is grey in colour, but the Holocene sands are pale yellow."></textarea>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      {% if result %}
+      <div class="hero-unit">
+        <h3>Interval{% if result|length > 1 %}s{% endif %}</h3>
+        <table width="100%">
+          <tr>
+            <td>Interval Name</td><td>Start</td><td>End</td><td>Source</td>
+          </tr>
+          {% for r in result %}
+            <tr>
+              <td width="30%" style="line-height:125%;"><small>{{ r['interval'] }} {{ r['rank'] }}</small></td>
+              <td width="30%" style="line-height:125%;"><small>{{ r['start_date'] }}{% if r['start_uncert'] %}±{{ r['start_uncert'] }}{% endif %}</small></td>
+              <td width="30%" style="line-height:125%;"><small>{{ r['end_date'] }}{% if r['end_uncert'] %}±{{ r['end_uncert'] }}{% endif %}</small></td>
+              <td width="10%" style="line-height:125%;"><small>{{ r['source'] }}</small></td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+    {% endif %}
+
+
+</div>
+{% endblock %}

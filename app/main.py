@@ -12,21 +12,62 @@ from spacy.lang.en import English
 import gner # class for recognising chronological entities.
 
 app = FastAPI()
-templates = Jinja2Templates(directory="app/templates")
+templates = Jinja2Templates(directory="./templates")
 
 
 class Data(BaseModel):
     text: str
 
 
-@app.get("/chrono/{text}")
-def find_chronos(text: str):
+@app.get("/about")
+def about(request: Request):
+
+    context = {
+        'request': request,
+    }
+
+    return templates.TemplateResponse("about.html", context)
+
+
+@app.get("/chrono")
+async def chrono(request: Request, text: str):
+    print(text)
+    pipe, tokens = get_chronos(text)
+
+    # print(tokens)
+    # return {"pipe": pipe, "details": tokens}
+    context = {
+        'request': request,
+        'pipe': pipe,
+        'result': tokens,
+    }
+
+    return templates.TemplateResponse("index.html", context)
+
+
+@app.get("/api/")
+async def api(text: str):
+    pipe, tokens = get_chronos(text)
+    return {'pipe': pipe, 'chronos': tokens}
+
+
+@app.get("/")
+def main(request: Request):
+
+    q = ''
+
+    context = {
+        'request': request,
+    }
+
+    return templates.TemplateResponse("index.html", context)
+
+def get_chronos(text):
     # nlp = en_core_web_sm.load(disable=['ner'])
     nlp = English()
     chronos = gner.ChronologyComponent(nlp)  # initialise component
     nlp.add_pipe(chronos) # add it to the pipeline
     doc = nlp(text.title())
-    print(doc.text.title())
 
     pipe = nlp.pipe_names  # pipeline contains component name
     tokens = []
@@ -43,12 +84,5 @@ def find_chronos(text: str):
                 'source': token._.source,
                 })  # chronology data
 
-    # print(tokens)
-    return {"pipe": pipe, "details": tokens}
-
-
-@app.get("/", response_class=HTMLResponse)
-def read_item(request: Request):
-    with open('templates/index.html') as f:
-        print(f.readlines())
-    return templates.TemplateResponse("index.html", {"request": request})
+    print(tokens)
+    return pipe, tokens
